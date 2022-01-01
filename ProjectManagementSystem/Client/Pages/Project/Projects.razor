@@ -1,0 +1,64 @@
+﻿@page "/projects"
+@inject IProjectService ProjectService
+@inject NavigationManager NavigationManager
+
+
+<h3>Projects</h3>
+<small>Add as many Projects as you wish.</small>
+<div class="form-group">
+    <a class="btn btn-success" href="project/create"><i class="oi oi-plus"></i> Create New</a>
+</div>
+<br>
+@if (projects == null)
+{
+    <text>Loading...</text>
+}
+else if (projects.Count == 0)
+{
+    <text>No Records Found.</text>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var project in projects)
+            {
+            <tr>
+                <td>@project.Id</td>
+                <td>@project.Name</td>
+                <td>@project.Description</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="(() => ShowProject(project.Id))">Show</button>
+                </td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    List<ProjectManagementSystem.Shared.Project> projects = new List<ProjectManagementSystem.Shared.Project>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await ProjectService.GetProjects();
+
+    }
+
+    void ShowProject(int id)
+    {
+        NavigationManager.NavigateTo($"project/{id}");
+    }
+
+}

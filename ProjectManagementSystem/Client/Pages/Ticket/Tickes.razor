@@ -1,0 +1,65 @@
+﻿@page "/tickets"
+@inject ITicketService TicketService
+@inject NavigationManager NavigationManager
+
+
+<h3>Tickets</h3>
+<small>Add as many Tickets as you wish.</small>
+<div class="form-group">
+    <a class="btn btn-success" href="ticket/create"><i class="oi oi-plus"></i> Create New</a>
+</div>
+<br>
+@if (tickets == null)
+{
+    <text>Loading...</text>
+}
+else if (tickets.Count == 0)
+{
+    <text>No Records Found.</text>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ticket in tickets)
+            {
+            <tr>
+                <td>@ticket.Id</td>
+                <td>@ticket.Title</td>
+                <td>@ticket.Description</td>
+                <td>@ticket.Status</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="(() => ShowTicket(ticket.Id))">Show</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    List<ProjectManagementSystem.Shared.Ticket> tickets = new List<ProjectManagementSystem.Shared.Ticket>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        tickets = await TicketService.GetTickets();
+
+    }
+
+    void ShowTicket(int id)
+    {
+        NavigationManager.NavigateTo($"ticket/{id}");
+    }
+
+}

@@ -1,0 +1,30 @@
+﻿@page "/user/{id:int}"
+@inject IUserService UserService
+
+@if (user == null)
+{
+    <span>User is loading...</span>
+}
+else
+{
+    <h1>User Details</h1>
+
+    <h4>Company Name</h4>
+    <p>@user.Name</p>
+
+    <h4>Description</h4>
+    <p>@user.Email</p>
+
+}
+
+@code {
+    [Parameter]
+    public Int32 Id { get; set; }
+
+    ProjectManagementSystem.Shared.User user = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await UserService.GetSingleUser(Id);
+    }
+}

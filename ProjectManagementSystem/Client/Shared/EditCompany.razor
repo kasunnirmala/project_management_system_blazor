@@ -1,0 +1,37 @@
+﻿@inject ICompanyService CompanyService
+@inject IJSRuntime JSRuntime
+
+@*@if (Company.Id == 0)
+{
+    <h3>Create a new Hero</h3>
+}
+else
+{
+    <h3>Edit '@Company.Name'</h3>
+}*@
+
+<EditForm Model="Company" OnSubmit="HandelSubmit">
+    <div class="form-group">
+        <label>Name</label>
+        <InputText @bind-Value="Company.Name" class="form-control"></InputText>
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <InputText @bind-Value="Company.Description" class="form-control"></InputText>
+    </div>
+    <div class="form-group">
+        <label>Address</label>
+        <InputText @bind-Value="Company.Address" class="form-control"></InputText>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+@code {
+    public ProjectManagementSystem.Shared.Company Company { get; set; }
+
+    void HandelSubmit()
+    {
+        Console.WriteLine("Submit was called");
+        Console.WriteLine(Company.Name);
+    }
+}

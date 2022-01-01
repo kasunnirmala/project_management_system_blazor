@@ -1,0 +1,32 @@
+﻿@page "/ticket/{id:int}"
+@inject ITicketService TicketService
+
+@if (ticket == null)
+{
+    <span>Ticket is loading...</span>
+}
+else
+{
+    <h1>Ticket Details</h1>
+
+    <h4>Ticket Name</h4>
+    <p>@ticket.Title</p>
+
+    <h4>Description</h4>
+    <p>@ticket.Description</p>
+
+    <h4>Address</h4>
+    <p>@ticket.Status</p>
+}
+
+@code {
+    [Parameter]
+    public Int32 Id { get; set; }
+
+    ProjectManagementSystem.Shared.Ticket ticket = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ticket = await TicketService.GetSingleTicket(Id);
+    }
+}

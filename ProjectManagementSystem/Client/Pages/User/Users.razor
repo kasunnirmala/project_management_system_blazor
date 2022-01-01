@@ -1,0 +1,63 @@
+﻿@page "/users"
+@inject IUserService UserService
+@inject NavigationManager NavigationManager
+
+
+<h3>Projects</h3>
+<small>Add as many Users as you wish.</small>
+<div class="form-group">
+    <a class="btn btn-success" href="user/create"><i class="oi oi-plus"></i> Create New</a>
+</div>
+<br>
+@if (users == null)
+{
+    <text>Loading...</text>
+}
+else if (users.Count == 0)
+{
+    <text>No Records Found.</text>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="(() => ShowUser(user.Id))">Show</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    List<ProjectManagementSystem.Shared.User> users = new List<ProjectManagementSystem.Shared.User>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await UserService.GetUsers();
+
+    }
+
+    void ShowUser(int id)
+    {
+        NavigationManager.NavigateTo($"user/{id}");
+    }
+
+}

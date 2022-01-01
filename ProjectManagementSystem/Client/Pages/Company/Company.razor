@@ -1,0 +1,32 @@
+﻿@page "/company/{id:int}"
+@inject ICompanyService CompanyService
+
+@if (company == null)
+{
+    <span>Company is loading...</span>
+}
+else
+{
+    <h1>Company Details</h1>
+
+    <h4>Company Name</h4>
+    <p>@company.Name</p>
+
+    <h4>Description</h4>
+    <p>@company.Description</p>
+
+    <h4>Address</h4>
+    <p>@company.Address</p>
+}
+
+@code {
+    [Parameter]
+    public Int32 Id { get; set; }
+
+    ProjectManagementSystem.Shared.Company company = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        company = await CompanyService.GetSingleCompany(Id);
+    }
+}

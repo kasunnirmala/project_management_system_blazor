@@ -1,0 +1,30 @@
+﻿@page "/project/{id:int}"
+@inject IProjectService ProjectService
+
+@if (project == null)
+{
+    <span>Project is loading...</span>
+}
+else
+{
+    <h1>Project Details</h1>
+
+    <h4>Title</h4>
+    <p>@project.Name</p>
+
+    <h4>Description</h4>
+    <p>@project.Description</p>
+
+}
+
+@code {
+    [Parameter]
+    public Int32 Id { get; set; }
+
+    ProjectManagementSystem.Shared.Project project = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        project = await ProjectService.GetSingleProject(Id);
+    }
+}
