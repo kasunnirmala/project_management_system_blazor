@@ -110,6 +110,119 @@
           "lib/netstandard2.0/IdentityServer4.Storage.dll": {}
         }
       },
+      "linq2db/3.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/linq2db.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/linq2db.dll": {}
+        }
+      },
+      "linq2db.SqlServer/3.6.0": {
+        "type": "package",
+        "dependencies": {
+          "linq2db": "3.6.0"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/LinqToDB.Templates/CopyMe.SqlServer.tt.txt": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SqlServer.SqlTypes.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SqlServer.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SqlServer.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/linq2db.SqlServer.props": {}
+        }
+      },
       "Microsoft.AspNetCore.ApiAuthorization.IdentityServer/5.0.10": {
         "type": "package",
         "dependencies": {
@@ -2117,6 +2230,88 @@
         "lib/netstandard2.0/IdentityServer4.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.Storage.pdb",
         "lib/netstandard2.0/IdentityServer4.Storage.xml"
+      ]
+    },
+    "linq2db/3.6.0": {
+      "sha512": "ZgaxVkEbxbHparKQ8fCW13S1wp9m3vDQkmbbssIhaNmbFoWm9zV8K/tmX+cL0CEcqRAdIibSOsIdZp3QWNK0mg==",
+      "type": "package",
+      "path": "linq2db/3.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "images/icon.png",
+        "lib/net45/linq2db.dll",
+        "lib/net45/linq2db.xml",
+        "lib/net46/linq2db.dll",
+        "lib/net46/linq2db.xml",
+        "lib/net472/linq2db.dll",
+        "lib/net472/linq2db.xml",
+        "lib/netcoreapp2.1/linq2db.dll",
+        "lib/netcoreapp2.1/linq2db.xml",
+        "lib/netcoreapp3.1/linq2db.dll",
+        "lib/netcoreapp3.1/linq2db.xml",
+        "lib/netstandard2.0/linq2db.dll",
+        "lib/netstandard2.0/linq2db.xml",
+        "lib/netstandard2.1/linq2db.dll",
+        "lib/netstandard2.1/linq2db.xml",
+        "linq2db.3.6.0.nupkg.sha512",
+        "linq2db.nuspec"
+      ]
+    },
+    "linq2db.SqlServer/3.6.0": {
+      "sha512": "Y979dSmAT3FGb4ZQTPos/2ELEt0RRV2lwPRPPpjWdaKZP60xRqp6PwnhlQWFwz5ZFFgJ0BAKjXZX5D0oYmUbPg==",
+      "type": "package",
+      "path": "linq2db.sqlserver/3.6.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "build/linq2db.SqlServer.props",
+        "content/LinqToDB.Templates/CopyMe.SqlServer.tt.txt",
+        "content/LinqToDB.Templates/DataAnnotations.ttinclude",
+        "content/LinqToDB.Templates/DataModel.ttinclude",
+        "content/LinqToDB.Templates/EditableObject.ttinclude",
+        "content/LinqToDB.Templates/Equatable.ttinclude",
+        "content/LinqToDB.Templates/Humanizer.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.SqlServer.SqlTypes.Tools.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.SqlServer.Tools.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.SqlServer.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.Tools.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.ttinclude",
+        "content/LinqToDB.Templates/MultipleFiles.ttinclude",
+        "content/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude",
+        "content/LinqToDB.Templates/NotifyPropertyChanged.ttinclude",
+        "content/LinqToDB.Templates/ObsoleteAttributes.ttinclude",
+        "content/LinqToDB.Templates/PluralizationService.ttinclude",
+        "content/LinqToDB.Templates/T4Model.ttinclude",
+        "content/LinqToDB.Templates/Validation.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/CopyMe.SqlServer.tt.txt",
+        "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SqlServer.SqlTypes.Tools.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SqlServer.Tools.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SqlServer.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude",
+        "images/icon.png",
+        "linq2db.sqlserver.3.6.0.nupkg.sha512",
+        "linq2db.sqlserver.nuspec",
+        "tools/Humanizer.dll",
+        "tools/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/Microsoft.SqlServer.Types.dll",
+        "tools/linq2db.dll"
       ]
     },
     "Microsoft.AspNetCore.ApiAuthorization.IdentityServer/5.0.10": {
@@ -6775,28 +6970,25 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.10",
       "ProjectManagementSystem.Client >= 1.0.0",
-      "ProjectManagementSystem.Shared >= 1.0.0"
+      "ProjectManagementSystem.Shared >= 1.0.0",
+      "linq2db >= 3.6.0",
+      "linq2db.SqlServer >= 3.6.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sanuri\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Kasun Nirmala\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\(2021) 6COSC007C.1 Enterprise Application Development\\CourseWorkCodeImplementation\\NewImplementation\\ProjectManagementSystem\\ProjectManagementSystem\\Server\\ProjectManagementSystem.Server.csproj",
+      "projectUniqueName": "C:\\Users\\Kasun Nirmala\\Desktop\\ProjectManagementSystem\\ProjectManagementSystem\\Server\\ProjectManagementSystem.Server.csproj",
       "projectName": "ProjectManagementSystem.Server",
-      "projectPath": "D:\\(2021) 6COSC007C.1 Enterprise Application Development\\CourseWorkCodeImplementation\\NewImplementation\\ProjectManagementSystem\\ProjectManagementSystem\\Server\\ProjectManagementSystem.Server.csproj",
-      "packagesPath": "C:\\Users\\Sanuri\\.nuget\\packages\\",
-      "outputPath": "D:\\(2021) 6COSC007C.1 Enterprise Application Development\\CourseWorkCodeImplementation\\NewImplementation\\ProjectManagementSystem\\ProjectManagementSystem\\Server\\obj\\",
+      "projectPath": "C:\\Users\\Kasun Nirmala\\Desktop\\ProjectManagementSystem\\ProjectManagementSystem\\Server\\ProjectManagementSystem.Server.csproj",
+      "packagesPath": "C:\\Users\\Kasun Nirmala\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kasun Nirmala\\Desktop\\ProjectManagementSystem\\ProjectManagementSystem\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Sanuri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Kasun Nirmala\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6810,11 +7002,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\(2021) 6COSC007C.1 Enterprise Application Development\\CourseWorkCodeImplementation\\NewImplementation\\ProjectManagementSystem\\ProjectManagementSystem\\Client\\ProjectManagementSystem.Client.csproj": {
-              "projectPath": "D:\\(2021) 6COSC007C.1 Enterprise Application Development\\CourseWorkCodeImplementation\\NewImplementation\\ProjectManagementSystem\\ProjectManagementSystem\\Client\\ProjectManagementSystem.Client.csproj"
+            "C:\\Users\\Kasun Nirmala\\Desktop\\ProjectManagementSystem\\ProjectManagementSystem\\Client\\ProjectManagementSystem.Client.csproj": {
+              "projectPath": "C:\\Users\\Kasun Nirmala\\Desktop\\ProjectManagementSystem\\ProjectManagementSystem\\Client\\ProjectManagementSystem.Client.csproj"
             },
-            "D:\\(2021) 6COSC007C.1 Enterprise Application Development\\CourseWorkCodeImplementation\\NewImplementation\\ProjectManagementSystem\\ProjectManagementSystem\\Shared\\ProjectManagementSystem.Shared.csproj": {
-              "projectPath": "D:\\(2021) 6COSC007C.1 Enterprise Application Development\\CourseWorkCodeImplementation\\NewImplementation\\ProjectManagementSystem\\ProjectManagementSystem\\Shared\\ProjectManagementSystem.Shared.csproj"
+            "C:\\Users\\Kasun Nirmala\\Desktop\\ProjectManagementSystem\\ProjectManagementSystem\\Shared\\ProjectManagementSystem.Shared.csproj": {
+              "projectPath": "C:\\Users\\Kasun Nirmala\\Desktop\\ProjectManagementSystem\\ProjectManagementSystem\\Shared\\ProjectManagementSystem.Shared.csproj"
             }
           }
         }
@@ -6856,6 +7048,14 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "[5.0.10, )"
+          },
+          "linq2db": {
+            "target": "Package",
+            "version": "[3.6.0, )"
+          },
+          "linq2db.SqlServer": {
+            "target": "Package",
+            "version": "[3.6.0, )"
           }
         },
         "imports": [
@@ -6876,7 +7076,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,10 +8,12 @@ namespace ProjectManagementSystem.Client.Services
 {
     public interface ICompanyService
     {
-        Task<List<Company>> GetCompanies();
+        public Task<List<Company>> GetCompanies();
 
-        Task<Company> GetSingleCompany(int id);
+        public Task<Company> GetSingleCompany(int id);
 
-        Task<List<Company>> CreateCompany(Company company);
+        public Task<bool> CreateCompany(Company company);
+        public Task<bool> UpdateCompany(Company company);
+        public Task<bool> DeleteCompany(int id);
     }
 }

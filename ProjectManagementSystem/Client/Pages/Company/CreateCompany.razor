@@ -1,0 +1,8 @@
+﻿@page "/company/create"
+@page "/company/edit/{id:int}"
+<h3>CreateCompany</h3>
+<EditCompany companyID="@Id"></EditCompany>
+@code {
+    [Parameter]
+    public int Id { get; set; }
+}

@@ -9,3 +9,15 @@ D:\(2021) 6COSC007C.1 Enterprise Application Development\CourseWorkCodeImplement
 D:\(2021) 6COSC007C.1 Enterprise Application Development\CourseWorkCodeImplementation\NewImplementation\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.dll
 D:\(2021) 6COSC007C.1 Enterprise Application Development\CourseWorkCodeImplementation\NewImplementation\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ref\ProjectManagementSystem.Shared.dll
 D:\(2021) 6COSC007C.1 Enterprise Application Development\CourseWorkCodeImplementation\NewImplementation\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.pdb
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\bin\Debug\net5.0\ProjectManagementSystem.Shared.deps.json
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\bin\Debug\net5.0\ProjectManagementSystem.Shared.dll
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\bin\Debug\net5.0\ref\ProjectManagementSystem.Shared.dll
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\bin\Debug\net5.0\ProjectManagementSystem.Shared.pdb
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.csproj.AssemblyReference.cache
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.AssemblyInfoInputs.cache
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.AssemblyInfo.cs
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.dll
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ref\ProjectManagementSystem.Shared.dll
+C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Shared\obj\Debug\net5.0\ProjectManagementSystem.Shared.pdb

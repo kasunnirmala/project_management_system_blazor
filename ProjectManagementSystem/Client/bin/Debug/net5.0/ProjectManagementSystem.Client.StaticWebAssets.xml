@@ -1,5 +1,5 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="D:\(2021) 6COSC007C.1 Enterprise Application Development\CourseWorkCodeImplementation\NewImplementation\ProjectManagementSystem\ProjectManagementSystem\Client\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="D:\(2021) 6COSC007C.1 Enterprise Application Development\CourseWorkCodeImplementation\NewImplementation\ProjectManagementSystem\ProjectManagementSystem\Client\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\Sanuri\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\5.0.10\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Kasun Nirmala\Desktop\ProjectManagementSystem\ProjectManagementSystem\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\Kasun Nirmala\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\5.0.10\build\..\staticwebassets\" />
 </StaticWebAssets>

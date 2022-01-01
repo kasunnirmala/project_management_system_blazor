@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ProjectManagementSystem.Server.Data;
 using ProjectManagementSystem.Server.Models;
+using ProjectManagementSystem.Server.Services;
 using System.Linq;
 
 namespace ProjectManagementSystem.Server
@@ -32,7 +33,7 @@ namespace ProjectManagementSystem.Server
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddIdentityServer()
@@ -43,6 +44,8 @@ namespace ProjectManagementSystem.Server
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddScoped<ICompanyService, CompanyService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

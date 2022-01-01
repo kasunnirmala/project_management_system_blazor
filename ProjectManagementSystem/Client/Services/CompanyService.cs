@@ -17,11 +17,19 @@ namespace ProjectManagementSystem.Client.Services
             _httpClient = httpClient;
         }
 
-        public async Task<List<Company>> CreateCompany(Company company)
+        public async Task<bool> CreateCompany(Company company)
         {
-            var result =await _httpClient.PostAsJsonAsync<Company>($"api/company",company);
-            var companies = await result.Content.ReadFromJsonAsync<List<Company>>();
-            return companies;
+            var result = await _httpClient.PostAsJsonAsync<Company>($"api/company", company);
+            var isCompanySaved = await result.Content.ReadFromJsonAsync<bool>();
+            return isCompanySaved;
+        }
+
+        public async Task<bool> DeleteCompany(int id)
+        {
+            var result = await _httpClient.DeleteAsync($"api/company/{id}");
+            var isCompanySaved = await result.Content.ReadFromJsonAsync<bool>();
+            Console.WriteLine(isCompanySaved);
+            return isCompanySaved;
         }
 
         public async Task<List<Company>> GetCompanies()
@@ -33,5 +41,14 @@ namespace ProjectManagementSystem.Client.Services
         {
             return await _httpClient.GetFromJsonAsync<Company>($"api/company/{id}");
         }
+
+        public async Task<bool> UpdateCompany(Company company)
+        {
+            var result = await _httpClient.PutAsJsonAsync<Company>($"api/company", company);
+            var isCompanyUpdated = await result.Content.ReadFromJsonAsync<bool>();
+            return isCompanyUpdated;
+        }
+
+       
     }
 }

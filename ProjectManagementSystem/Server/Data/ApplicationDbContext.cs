@@ -3,10 +3,7 @@ using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using ProjectManagementSystem.Server.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ProjectManagementSystem.Shared;
 
 namespace ProjectManagementSystem.Server.Data
 {
@@ -17,5 +14,7 @@ namespace ProjectManagementSystem.Server.Data
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
         }
+
+        public DbSet<Company> Companies { get; set; }
     }
 }
